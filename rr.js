@@ -8,7 +8,7 @@
 
 [rewrite_local]
 
-^http[s]?:\/\/api\.hujuvod\.com\/user\/personal\/information url script-response-body 
+^http[s]?:\/\/api\.hujuvod\.com\/user\/personal\/information url script-response-body https://raw.githubusercontent.com/hnkks/Scripts/main/rr.js
 
 [mitm] 
 
