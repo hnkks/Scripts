@@ -2,13 +2,13 @@
 
 > 应用名称：ydy
 > 脚本作者：hnkks
-> 解锁说明：不可描述，懂的都懂
+> 解锁说明：xx
 > 更新时间：2023-8-14
 > 特别说明：本脚本仅供群友学习交流使用，禁止转载售卖
           
 [rewrite_local]
   
-^http[s]?:\/\/note\.youdao\.com\/yws/(mapi/payment|api/self) url script-response-body 
+^http[s]?:\/\/note\.youdao\.com\/yws/(mapi/payment|api/self) url script-response-body https://raw.githubusercontent.com/hnkks/Scripts/main/test.js
 
 [mitm] 
 
