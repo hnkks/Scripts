@@ -8,7 +8,7 @@
           
 [rewrite_local]
 
-^http[s]?:\/\/ws-302-play\.hujuvod\.com url script-response-body https://raw.githubusercontent.com/hnkks/Scripts/main/123.js
+^http[s]?:\/\/qn-302-cdn-play\.hujuvod\.com url script-response-body https://raw.githubusercontent.com/hnkks/Scripts/main/123.js
 
 
 [mitm] 
@@ -73,7 +73,7 @@ if (url.indexOf('/ad/getAll') != -1) {
 		"icon": "kanjuwuguanggao"
 	}];
 
-}else if(url.indexOf('ws-302-play.hujuvod.com') != -1){
+}else if(url.indexOf('qn-302-cdn-play.hujuvod.com') != -1){
 	var obj = JSON.parse(body);
 
 	obj.data['season']['feeMode'] = 'restriction';
