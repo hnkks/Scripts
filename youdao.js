@@ -8,7 +8,7 @@
           
 [rewrite_local]
   
-^http[s]?:\/\/note\.youdao\.com\/yws/(mapi/payment|api/self) url script-response-body https://raw.githubusercontent.com/hnkks/Scripts/main/test.js
+^http[s]?:\/\/note\.youdao\.com\/yws/(mapi/payment|api/self) url script-response-body https://raw.githubusercontent.com/hnkks/Scripts/main/youdao.js
 
 [mitm] 
 
