@@ -8,12 +8,12 @@
           
 [rewrite_local]
 
-^http[s]?:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail) url script-response-body https://raw.githubusercontent.com/hnkks/Scripts/main/123.js
+^http[s]?:\/\/api.hujuvod.com\/user\/personal\/information url script-response-body https://raw.githubusercontent.com/hnkks/Scripts/main/123.js
 
 
 [mitm] 
 
-hostname = api.rr.tv
+hostname = api.hujuvod.com
 
 ***********************************/
 
