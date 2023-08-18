@@ -15,6 +15,6 @@ hostname = p.du.163.com
 
 let obj = JSON.parse($response.body);
 
-obj.tradeEndTime = 100
+obj.tradeEndTime = 999
 
 $done({body: JSON.stringify(obj)});
