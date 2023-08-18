@@ -8,7 +8,7 @@
           
 [rewrite_local]
 
-^http[s]?:\/\/api\.hujuvod\.com(\/user\/personal\/information|\/ad\/getAll|\/drama\/detail) url script-response-body https://raw.githubusercontent.com/hnkks/Scripts/main/123.js
+^http[s]?:\/\/api\.hujuvod\.com(\/user\/personal\/information|\/drama\/detail) url script-response-body https://raw.githubusercontent.com/hnkks/Scripts/main/123.js
 
 
 [mitm] 
@@ -20,11 +20,7 @@ hostname = *.hujuvod.*
 var body = $response.body;
 var url = $request.url;
 
-if (url.indexOf('/ad/getAll') != -1) {
-	var obj = JSON.parse(body);
-	obj.data.adList = [];
-	body = JSON.stringify(obj);
-} else if (url.indexOf('/user/personal/information') != -1) {
+if (url.indexOf('/user/personal/information') != -1) {
 	var obj = JSON.parse(body);
 	obj.data = [{
 		"action": "play",
