@@ -8,7 +8,7 @@
           
 [rewrite_local]
 
-^http[s]?:\/\/api.hujuvod.com\/user\/personal\/information url script-response-body https://raw.githubusercontent.com/hnkks/Scripts/main/123.js
+^http[s]?:\/\/api\.hujuvod\.com\/user\/personal\/information url script-response-body https://raw.githubusercontent.com/hnkks/Scripts/main/123.js
 
 
 [mitm] 
@@ -32,7 +32,7 @@ if (url.indexOf('/ad/getAll') != -1) {
 		"id": 1,
 		"function": "originalPainting",
 		"func": "originalPainting",
-		"endTime": 1667341767582,
+		"endTime": 2043244800000,
 		"description": "解锁原画",
 		"icon": "jiesuoyuanhua"
 	}, {
@@ -41,7 +41,7 @@ if (url.indexOf('/ad/getAll') != -1) {
 		"id": 4,
 		"function": "noLimit",
 		"func": "noLimit",
-		"endTime": 1567341767582,
+		"endTime": 2043244800000,
 		"description": "看剧无限制",
 		"icon": "kanjuwuxianzhi"
 	}, {
@@ -50,7 +50,7 @@ if (url.indexOf('/ad/getAll') != -1) {
 		"id": 37,
 		"function": "0.4",
 		"func": "0.4",
-		"endTime": 1667341767582,
+		"endTime": 2043244800000,
 		"description": "看剧经验+40%",
 		"icon": "jingyanzhijiacheng"
 	}, {
@@ -59,7 +59,7 @@ if (url.indexOf('/ad/getAll') != -1) {
 		"id": 43,
 		"function": "superBarrageBlue",
 		"func": "superBarrageBlue",
-		"endTime": 1667341767582,
+		"endTime": 2043244800000,
 		"description": "超级弹幕",
 		"icon": "chaojidanmu"
 	}, {
@@ -68,7 +68,7 @@ if (url.indexOf('/ad/getAll') != -1) {
 		"id": 23,
 		"function": "noAd",
 		"func": "noAd",
-		"endTime": 1667341767582,
+		"endTime": 2043244800000,
 		"description": "看剧无广告",
 		"icon": "kanjuwuguanggao"
 	}];
