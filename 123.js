@@ -20,7 +20,7 @@ hostname = *.hujuvod.*
 var body = $response.body;
 var url = $request.url;
 
-if (url.indexOf('/user/personal/information') != -1) {
+if (url.indexOf('/user/personal/information') != 1) {
 	var obj = JSON.parse(body);
 	obj.data = [{
 		"action": "play",
