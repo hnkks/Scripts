@@ -33,12 +33,6 @@ if (url.indexOf('/user/personal/information') != -1) {
 		"icon": "jiesuoyuanhua"
 	}];
 
-}else if(url.indexOf('/drama/detail') != -1){
-	var obj = JSON.parse(body);
-
-	obj.data['season']['feeMode'] = 'restriction';
-}
-
 
 body = JSON.stringify(obj);
 
