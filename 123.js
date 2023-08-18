@@ -8,7 +8,7 @@
           
 [rewrite_local]
 
-^http[s]?:\/\/api\.hujuvod\.com(\/user\/personal\/information|\/drama\/detail) url script-response-body https://raw.githubusercontent.com/hnkks/Scripts/main/123.js
+^http[s]?:\/\/api\.hujuvod\.com(\/user\/personal\/information|\/ad\/getAll|\/drama\/detail) url script-response-body https://raw.githubusercontent.com/hnkks/Scripts/main/123.js
 
 
 [mitm] 
@@ -20,7 +20,11 @@ hostname = *.hujuvod.*
 var body = $response.body;
 var url = $request.url;
 
-if (url.indexOf('/user/personal/information') != -1) {
+if (url.indexOf('/ad/getAll') != -1) {
+	var obj = JSON.parse(body);
+	obj.data.adList = [];
+	body = JSON.stringify(obj);
+} else if (url.indexOf('/user/personal/information') != -1) {
 	var obj = JSON.parse(body);
 	obj.data = [{
 		"action": "play",
@@ -31,42 +35,6 @@ if (url.indexOf('/user/personal/information') != -1) {
 		"endTime": 2043244800000,
 		"description": "解锁原画",
 		"icon": "jiesuoyuanhua"
-	}, {
-		"action": "play",
-		"effectObject": "video",
-		"id": 4,
-		"function": "noLimit",
-		"func": "noLimit",
-		"endTime": 2043244800000,
-		"description": "看剧无限制",
-		"icon": "kanjuwuxianzhi"
-	}, {
-		"action": "play",
-		"effectObject": "growth",
-		"id": 37,
-		"function": "0.4",
-		"func": "0.4",
-		"endTime": 2043244800000,
-		"description": "看剧经验+40%",
-		"icon": "jingyanzhijiacheng"
-	}, {
-		"action": "send",
-		"effectObject": "danmu",
-		"id": 43,
-		"function": "superBarrageBlue",
-		"func": "superBarrageBlue",
-		"endTime": 2043244800000,
-		"description": "超级弹幕",
-		"icon": "chaojidanmu"
-	}, {
-		"action": "play",
-		"effectObject": "video",
-		"id": 23,
-		"function": "noAd",
-		"func": "noAd",
-		"endTime": 2043244800000,
-		"description": "看剧无广告",
-		"icon": "kanjuwuguanggao"
 	}];
 
 }else if(url.indexOf('/drama/detail') != -1){
