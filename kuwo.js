@@ -8,7 +8,7 @@
           
 [rewrite_local]
 
-^http[s]?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice) url script-response-body https://raw.githubusercontent.com/hnkks/Scripts/main/kuwo.js
+^http[s]?:\/\/.*\.kuwo\.cn/vip/v2/user/vip url script-response-body https://raw.githubusercontent.com/hnkks/Scripts/main/kuwo.js
 
 [mitm] 
 
