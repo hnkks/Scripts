@@ -20,6 +20,6 @@ var obj = JSON.parse($response.body);
 obj.status = 0;
 obj.data.isvip = 1;
 obj.data.Uviptime = 2043244800000;
-obj.data.coins = 999999;
-obj.data.Cgold = 999999;
+obj.data.coins = 99999;
+obj.data.Cgold = 99999;
 $done({body: JSON.stringify(obj)});
