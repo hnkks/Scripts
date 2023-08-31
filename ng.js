@@ -17,6 +17,7 @@ hostname = open-secret-api-v2.vcinema.cn
 ***********************************/
 
 let obj = JSON.parse($response.body);
+obj.data.user_vip_renew_status = 1;
 obj.data.is_get = true;
 obj.data.get = true;
 $done({body: JSON.stringify(obj)});
