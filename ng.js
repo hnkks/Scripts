@@ -19,5 +19,5 @@ hostname = open-secret-api-v2.vcinema.cn
 let obj = JSON.parse($response.body);
 obj.data.user_vip_state = 2;
 obj.data.is_get = true;
-obj.data.get = true;
+obj.data.user_vip_start_date = 2023-08-31;
 $done({body: JSON.stringify(obj)});
