@@ -20,6 +20,7 @@ let obj = JSON.parse($response.body);
 obj.data.user_vip_renew_status = 1;
 obj.data.user_vip_renew_days = 2043244800000;
 obj.data.user_vip_end_date = 2024.10.01;
+obj.data.user_old_vip_state = 0;
 obj.data.is_get = true;
 obj.data.get = true;
 $done({body: JSON.stringify(obj)});
