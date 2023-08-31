@@ -17,7 +17,7 @@ hostname = open-secret-api-v2.vcinema.cn
 ***********************************/
 
 let obj = JSON.parse($response.body);
-obj.data.user_deluxe_state = 1;
+obj.data.live_broad_cast_end_time_status = true;
 obj.data.is_get = true;
 obj.data.get = true;
 $done({body: JSON.stringify(obj)});
