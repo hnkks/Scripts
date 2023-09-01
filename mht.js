@@ -8,7 +8,7 @@
           
 [rewrite_local]
 
-^http[s]?:\/\/api-cdn\.kaimanhua\.com\/kanmanapi\/user\/user\/\?client-version=3\.3\.0&examine_info=1&ismhtlite=1&myuid=87738533&openid=14444473_470C769B223224BA5B34F0A9FEF60719&platformname=ipad&productname=mht&type=mkxq url script-response-body https://raw.githubusercontent.com/hnkks/Scripts/main/mht.js
+^http[s]?:\/\/api-cdn\.kaimanhua\.com\/kanmanapi\/user\/user url script-response-body https://raw.githubusercontent.com/hnkks/Scripts/main/mht.js
 
 [mitm] 
 
