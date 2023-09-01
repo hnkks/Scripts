@@ -21,6 +21,7 @@ obj.status = 0;
 obj.data.is_year_vip = 1;
 obj.data.vipoverday = 1;
 obj.data.isvip = 1;
+obj.data.vip_level = 2;
 obj.data.coin = 99999999;
 obj.data.Cgold = 99999999;
 $done({body: JSON.stringify(obj)});
