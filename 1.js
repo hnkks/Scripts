@@ -26,5 +26,5 @@ modifiedHeaders['x-bili-trace-id'] = '2d3b6f1475d95132216bf13da764f30b:216bf13da
 modifiedHeaders['Authorization'] = 'identify_v1 f59153359fca59b23bd84decb65d2f92jfeOoYKokIQgwDj4klSxri_DFtr9Uo2LRQXu3BEKVAMGNz8n55UM6rs-Sai0LpVFfdBk6wAARQA';
 modifiedHeaders['x-bili-device-bin'] = 'CAEQxPW2IxokWTg0MDc2ODJCNjFCQUFDMTRDRDM5NEMwREQwODg1ODYxQjRBIgZpcGhvbmUqA2lvczIDcGFkOgVhcHBsZUIFQXBwbGVKB2lQYWQgOUdSBDE2LjZqBjcuNDMuMHJANTlBNTc0Q0QwNzExQkVDQ0M5NUFENTA5MkQ2NDg1N0IyMDIyMTAwMzIxMzMyNzQ1MkY5OUU0MUYyNUIzRDNGRXj4n/GwoDE=';
 modifiedHeaders['x-bili-network-bin'] = 'CAE=';
-modifiedHeaders['Cookie'] = 'SESSDATA=bcbafdbc%2C1709094622%2Ca5883792jfeOoYKokIQgwDj4klSxri_DFtr9Uo2LRQXu3BEKVAMGNz8n55UM6rs-Sai0LpVFfdBk6wAARQA';
+modifiedHeaders['SESSDATA'] = '=bcbafdbc%2C1709094622%2Ca5883792jfeOoYKokIQgwDj4klSxri_DFtr9Uo2LRQXu3BEKVAMGNz8n55UM6rs-Sai0LpVFfdBk6wAARQA';
 $done({'headers': modifiedHeaders});
