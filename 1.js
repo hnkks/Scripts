@@ -8,7 +8,7 @@
           
 [rewrite_local]
   
-^http[s]?:\/\/((app|api)\.(\w{2,15})?\.(com|cn)).*player\.(v3|v2|v1).Play(URL|View).*$ url script-request-header https://raw.githubusercontent.com/hnkks/Quantumult-X/main/boli.js
+^http[s]?:\/\/((app|api)\.(\w{2,15})?\.(com|cn)).*player\.(v3|v2|v1).Play(URL|View).*$ url script-request-header https://raw.githubusercontent.com/hnkks/Scripts/main/1.js
 
 [mitm] 
 
