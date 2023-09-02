@@ -17,7 +17,7 @@ hostname = *.biliapi.*, *.bilibili.*
 ***********************************/
 
 var modifiedHeaders = $request['headers'];
-modifiedHeaders['Cookie'] = 'SESSDATA=bcbafdbc%2C1709094622%2Ca5883792jfeOoYKokIQgwDj4klSxri_DFtr9Uo2LRQXu3BEKVAMGNz8n55UM6rs-Sai0LpVFfdBk6wAARQA;';
+modifiedHeaders['Cookie'] = 'SESSDATA=bcbafdbc%2C1709094622%2Ca5883792jfeOoYKokIQgwDj4klSxri_DFtr9Uo2LRQXu3BEKVAMGNz8n55UM6rs-Sai0LpVFfdBk6wAARQA';
 modifiedHeaders['x-bili-device-bin'] = 'CAEQxPW2IxokWTg0MDc2ODJCNjFCQUFDMTRDRDM5NEMwREQwODg1ODYxQjRBIgZpcGhvbmUqA2lvczIDcGFkOgVhcHBsZUIFQXBwbGVKB2lQYWQgOUdSBDE2LjZqBjcuNDMuMHJANTlBNTc0Q0QwNzExQkVDQ0M5NUFENTA5MkQ2NDg1N0IyMDIyMDkyNjIxNTc0NjBDNzE3RkZGQTcwNDRFQzM1OXj4n/GwoDE=';
 modifiedHeaders['Authorization'] = 'identify_v1 7593071e89c3b34f172c146db0efe9821SAyAllqcy0P_4wqM7tjE57c5B_Jxu9eiCRZDyw6xs8FdPsJS4r-WaPWrkpzerSk61wUlgAARQA';
 modifiedHeaders['User-Agent'] = 'bili-universal/74300100 os/ios model/iPad 9G mobi_app/iphone osVer/16.6 network/2';
