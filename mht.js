@@ -8,7 +8,7 @@
           
 [rewrite_local]
 
-^http[s]?:\/\/ios-getconfig.womanhua.com\/api\/v1\/getnewmhtliteconfig\?client-version=([^&]+)\&ismhtlite=(1|0)&myuid=([^&]+)\&platformname=ipad&productname=mht url script-response-body https://raw.githubusercontent.com/hnkks/Scripts/main/mht.js
+^http[s]?:\/\/ios-getconfig.womanhua.com\/api\/v1\/getnewmhtliteconfig url script-response-body https://raw.githubusercontent.com/hnkks/Scripts/main/mht.js
 
 [mitm] 
 
