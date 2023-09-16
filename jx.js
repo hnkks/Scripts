@@ -17,6 +17,6 @@ hostname = api.tipsoon.com
 ***********************************/
 
 var obj = JSON.parse($response.body);
-obj.data.is_vip = ture;
+obj.data.is_vip = true;
 obj.data.vip_expire_time = "9999-99-99 00:00:00";
 $done({body: JSON.stringify(obj)});
