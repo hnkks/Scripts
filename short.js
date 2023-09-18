@@ -1,3 +1,4 @@
+
 /***********************************
 
 > 应用名称：xxx
@@ -8,16 +9,16 @@
           
 [rewrite_local]
 
-^http[s]?:\/\/www\.xinxinzhuiju\.org\/userAssets\/detail url script-response-body https://raw.githubusercontent.com/hnkks/Scripts/main/short.js
+^http[s]?:\/\/iosshortplay\.sanwubeixin\.cn\/ct\/user\/info url script-response-body https://raw.githubusercontent.com/hnkks/Scripts/main/short.js
 
 [mitm] 
 
-hostname = www.xinxinzhuiju.org
+hostname = iosshortplay.sanwubeixin.cn
 
 ***********************************/
 
 var obj = JSON.parse($response.body);
-obj.data.vipEndTime = 2043244800000;
-obj.data.totalCoin = 999999;
-obj.data.totalFreeUnlockNum = 999;
+obj.data.isVip = true;
+obj.data.vip_time = 2043244800000;
+obj.data.vip_type = 0;
 $done({body: JSON.stringify(obj)});
